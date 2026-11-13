@@ -101,7 +101,7 @@
       '<div class="sk-karte__feld">' +
         '<header class="sk-kopf"><div class="sk-kopf__titel"><span class="sk-kopf__stufe karte-label">Basis</span><h3 class="sk-kopf__name karte-name">' + esc(k.name) + '</h3></div>' +
         '<span class="sk-kopf__kp"><span class="karte-label">KP</span><span class="karte-kp">' + k.kp + '</span></span>' + typ(k.typ) + '</header>' +
-        '<div class="sk-bild sk-bild--platzhalter">' + (holo ? '<span class="sk-holo"></span>' : '') + '</div>' +
+        '<div class="sk-bild sk-bild--platzhalter" data-nr="' + k.nr + '">' + (holo ? '<span class="sk-holo"></span>' : '') + '</div>' +
         '<p class="sk-info karte-info">' + esc(k.info) + '</p>' +
         '<div class="sk-angriffe">' + k.angriffe.map(angriffHtml).join('') + '</div>' +
         '<div class="sk-werte">' +
