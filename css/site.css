@@ -1,0 +1,82 @@
+/* HTL Sammelkarten – Seitenstile (aus dem Claude-Design übernommen) */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--flaeche-papier);color:var(--tinte);font-family:var(--font-text)}
+a{color:#af4126}a:hover{color:#f25934}
+.nur-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hw-hero{padding-left:max(50px,calc((100% - 900px) / 2));padding-right:max(50px,calc((100% - 900px) / 2));min-height:518px;gap:70px}
+.hw-nav{position:relative;flex-wrap:wrap}
+.hw-fuss{padding-left:max(30px,calc((100% - 1080px) / 2));padding-right:max(30px,calc((100% - 1080px) / 2))}
+.typ-raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:30px;margin-top:50px}
+.typ-eintrag{display:flex;align-items:center;gap:15px;padding-top:15px;border-top:1px solid var(--linie)}
+.typ-eintrag p{margin:0;color:var(--tinte-titel)}
+.sammler{margin-top:75px;padding-top:30px;border-top:4px solid var(--linie-stark)}
+.sammler h3{margin:0;color:var(--flaeche-nacht)}
+.sammler__text{margin:10px 0 0;max-width:60ch}
+.stapel-fuss{min-height:44px;margin-top:15px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px}
+.stapel-fuss[hidden]{display:none}
+.stapel-fuss p{margin:0;color:var(--tinte-gedaempft)}
+.termine{display:flex;flex-wrap:wrap;align-items:stretch;gap:50px;margin-top:50px}
+.termine .hw-box{flex:1 1 320px;max-width:380px}
+.termine__liste{flex:999 1 320px;min-width:0}
+.mehr{display:flex;justify-content:center;margin-top:50px}
+.menu-liste{display:none}
+:root [data-typ="elektro"]{--typ-glyph:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 14h5M14.5 14H22'/%3E%3Cpath d='M7 9.5v9l7-4.5z' fill='%23000'/%3E%3Cpath d='M14.5 9.5v9'/%3E%3Cpath d='M11.7 6.9l3-3M13 3.9h1.7v1.7M16.4 8.6l3-3M17.7 5.6h1.7v1.7'/%3E%3C/svg%3E")}
+:root [data-typ="pflanze"]{--typ-glyph:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill-rule='evenodd' d='M4.5 19.5C4.5 10.5 10 5 19.5 4.5C19 14 13.5 19.5 4.5 19.5zM6.6 17.4Q10.55 11.05 16.9 7.1Q12.95 13.45 6.6 17.4z'/%3E%3C/svg%3E")}
+:root [data-typ="kampf"]{--typ-glyph:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg transform='translate(0 -0.8)'%3E%3Cg transform='translate(1.7 0) skewX(-8)'%3E%3Crect x='2.4' y='8' width='4.1' height='9' rx='2.05'/%3E%3Crect x='7.4' y='5.6' width='4.1' height='12' rx='2.05'/%3E%3Crect x='12.4' y='3.8' width='4.1' height='14' rx='2.05'/%3E%3Crect x='17.4' y='3.4' width='4.1' height='13.6' rx='2.05'/%3E%3C/g%3E%3Cpath fill-rule='evenodd' d='M12.3 18.7H18.7A1.8 1.8 0 0 1 20.5 20.5A1.8 1.8 0 0 1 18.7 22.3H12.3A1.8 1.8 0 0 1 10.5 20.5A1.8 1.8 0 0 1 12.3 18.7ZM12.6 19.6H14.8A0.9 0.9 0 0 1 15.7 20.5A0.9 0.9 0 0 1 14.8 21.4H12.6A0.9 0.9 0 0 1 11.7 20.5A0.9 0.9 0 0 1 12.6 19.6Z'/%3E%3C/g%3E%3C/svg%3E")}
+.menu-knopf{display:none;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid #ffffff;border-radius:100px;background:transparent;color:#ffffff;cursor:pointer}
+.menu-knopf:focus-visible{outline:2px solid transparent;box-shadow:0 0 0 2px #ffffff,0 0 0 4px #0e1623}
+.stapel-buehne{position:relative;height:350px;margin-top:30px;overflow:visible;clip-path:inset(-120px 0 -120px -120px)}
+.stapel-knopf{position:absolute;left:10px;top:10px;width:270px;height:320px;z-index:20;padding:0;border:0;border-radius:15px;background:transparent;cursor:pointer}
+.stapel-buehne:not(.ist-offen):has(.stapel-knopf:hover) .flip{transform:translate3d(calc(44px + var(--x0) * 1.6),calc(30px + var(--y0)),0) rotate(calc(var(--dreh) * 1.25));transition:transform .35s cubic-bezier(.22,1,.36,1) 0s}
+.stapel-knopf:focus-visible{outline:2px solid transparent;box-shadow:0 0 0 2px #ffffff,0 0 0 4px #0e1623}
+.ist-offen .stapel-knopf{display:none}
+.stapel-hinweis{position:absolute;left:320px;top:38px;height:264px;width:540px;display:flex;flex-direction:column;justify-content:center;will-change:transform,opacity;transform:translate3d(0,0,0);opacity:1;transition:transform .8s cubic-bezier(.22,1,.36,1) .45s,opacity .5s ease .5s}
+.ist-offen .stapel-hinweis{transform:translate3d(780px,0,0);opacity:0;pointer-events:none;transition:transform .9s cubic-bezier(.22,1,.36,1) .04s,opacity .45s ease .3s}
+.flip{--fx-akt:var(--fx);--fan-start:32px;--k:.6;position:absolute;left:0;top:0;width:189px;height:264px;perspective:1600px;transform-origin:50% 90%;will-change:transform;transform:translate3d(calc(44px + var(--x0)),calc(38px + var(--y0)),0) rotate(var(--dreh));transition:transform .9s cubic-bezier(.22,1,.36,1) var(--dz)}
+.ist-offen .flip{transform:translate3d(calc(var(--fan-start) + var(--fx-akt)),calc(30px + var(--fy)),0) rotate(var(--fr));transition:transform .9s cubic-bezier(.22,1,.36,1) var(--d)}
+.flip__innen{position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform;transform:rotateY(180deg);transition:transform .8s cubic-bezier(.22,1,.36,1) var(--dz)}
+.ist-offen .flip__innen{transform:rotateY(0deg);transition:transform .8s cubic-bezier(.22,1,.36,1) calc(var(--d) + .08s)}
+.ist-offen .flip:hover .flip__innen{transform:translate3d(0,-14px,0) rotateY(0deg);transition:transform .3s cubic-bezier(.22,1,.36,1) 0s}
+.flip__seite{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flip__seite--rueck{transform:rotateY(180deg)}
+.flip .sk-karte--s{zoom:1;transform:scale(var(--k));transform-origin:0 0}
+.flip[data-i="0"]{--dreh:-9deg;--x0:0px;--y0:0px;--fx:0px;--fxm:0px;--fy:14px;--fr:-6deg;--d:0s;--dz:0.27s;z-index:10}
+.flip[data-i="1"]{--dreh:6deg;--x0:6px;--y0:-4px;--fx:116px;--fxm:33px;--fy:3px;--fr:-2deg;--d:0.05s;--dz:0.24s;z-index:9}
+.flip[data-i="2"]{--dreh:-3deg;--x0:-4px;--y0:3px;--fx:238px;--fxm:68px;--fy:10px;--fr:2.5deg;--d:0.1s;--dz:0.21s;z-index:8}
+.flip[data-i="3"]{--dreh:11deg;--x0:8px;--y0:-2px;--fx:352px;--fxm:100px;--fy:0px;--fr:-1deg;--d:0.15s;--dz:0.18s;z-index:7}
+.flip[data-i="4"]{--dreh:-4deg;--x0:3px;--y0:-2px;--fx:470px;--fxm:134px;--fy:6px;--fr:3deg;--d:0.2s;--dz:0.15s;z-index:6}
+.flip[data-i="5"]{--dreh:-6deg;--x0:2px;--y0:5px;--fx:482px;--fxm:140px;--fy:9px;--fr:4deg;--d:0.24s;--dz:0.12s;z-index:5}
+.flip[data-i="6"]{--dreh:3deg;--x0:-6px;--y0:1px;--fx:493px;--fxm:146px;--fy:4px;--fr:1deg;--d:0.27s;--dz:0.09s;z-index:4}
+.flip[data-i="7"]{--dreh:-12deg;--x0:4px;--y0:-3px;--fx:505px;--fxm:152px;--fy:12px;--fr:6deg;--d:0.3s;--dz:0.06s;z-index:3}
+.flip[data-i="8"]{--dreh:9deg;--x0:-5px;--y0:4px;--fx:516px;--fxm:157px;--fy:7px;--fr:2.5deg;--d:0.33s;--dz:0.03s;z-index:2}
+.flip[data-i="9"]{--dreh:7deg;--x0:-2px;--y0:2px;--fx:528px;--fxm:163px;--fy:10px;--fr:5deg;--d:0.36s;--dz:0.0s;z-index:1}
+@media (prefers-reduced-motion:reduce){.flip,.ist-offen .flip,.flip__innen,.ist-offen .flip__innen,.stapel-hinweis,.ist-offen .stapel-hinweis{transition:none}}
+@media (max-width:850px){
+.hw-nav{padding:15px}
+.hw-nav__links{display:none}
+.menu-knopf{display:inline-flex}
+.hw-hero{grid-template-columns:minmax(0,1fr) !important;padding:50px 15px !important}
+.text-sektion{font-size:28px;line-height:33px}
+.hw-raster{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+.hw-nav .hw-button{display:none}
+.hw-raster{gap:30px 10px}
+.hw-kachel{width:158px}
+.hw-raster .sk-karte--s{zoom:.5}
+.stapel-buehne{height:480px}
+.stapel-hinweis{left:0;top:350px;width:auto;right:0;height:auto}
+.flip{--fx-akt:var(--fxm);--fan-start:20px;width:158px;height:220px}
+.flip{--k:.5}
+}
+@media (max-width:850px){
+.hw-nav.ist-offen .menu-liste{display:flex;flex-direction:column;flex-basis:100%;gap:0;margin:0;padding:10px 0 0;list-style:none}
+.menu-liste a{display:block;padding:12px 0;border-top:1px solid var(--linie-dunkel);color:var(--tinte-hell);text-decoration:none;text-transform:uppercase}
+.menu-liste a:hover{color:var(--akzent)}
+.hw-faecher{max-width:100%}
+}
+@media (max-width:480px){
+.hw-faecher{zoom:.8}
+.hw-termin__titel,.hw-termin__zeit{white-space:normal}
+}

@@ -1,0 +1,84 @@
+/* HTL Sammelkarten — Tokens (aus tokens.json erzeugt). */
+@font-face { font-family: "Montserrat"; src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/lato-regular-webfont.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/lato-bold-webfont.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Lato"; src: url("../fonts/lato-black-webfont.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+
+:root {
+  --marke-rot: #e51934;
+  --marke-rot-dunkel: #b3122a;
+  --marke-schiefer: #3e4c59;
+  --akzent: #f25934;
+  --akzent-dunkel: #af4126;
+  --auf-akzent: #0e1623;
+  --flaeche: #ffffff;
+  --flaeche-papier: #f6f6f3;
+  --flaeche-grau: #efefef;
+  --flaeche-dunkel: #252c3c;
+  --flaeche-nacht: #0e1623;
+  --tinte: #262626;
+  --tinte-titel: #3f4650;
+  --tinte-gedaempft: #4c525b;
+  --tinte-leise: #979797;
+  --tinte-hell: #ffffff;
+  --linie: #cccccc;
+  --linie-stark: #0e1623;
+  --linie-dunkel: #30343a;
+  --silber: #c3c3c5;
+  --abteilung-wi: #018ac2;
+  --abteilung-ci: #a8b803;
+  --abteilung-md: #e82e8a;
+  --selten-gold: #b08400;
+  --typ-pflanze: #a8b803; --typ-pflanze-flaeche: #eef1c8;
+  --typ-feuer: #f25934; --typ-feuer-flaeche: #fde4dc;
+  --typ-wasser: #018ac2; --typ-wasser-flaeche: #d9edf6;
+  --typ-elektro: #f2c200; --typ-elektro-flaeche: #fcf1c0;
+  --typ-psycho: #e82e8a; --typ-psycho-flaeche: #fbdcea;
+  --typ-kampf: #af4126; --typ-kampf-flaeche: #f6e7e2;
+  --typ-finsternis: #252c3c; --typ-finsternis-flaeche: #e3e5ea;
+  --typ-metall: #979797; --typ-metall-flaeche: #e8e8e8;
+  --typ-drache: #b08400; --typ-drache-flaeche: #f4e6c3;
+  --typ-fee: #f39ac4; --typ-fee-flaeche: #fde6f1;
+  --typ-farblos: #f6f6f3; --typ-farblos-flaeche: #f6f6f3;
+
+  --font-display: Montserrat, Arial, sans-serif;
+  --font-text: Lato, Arial, sans-serif;
+
+  --abstand-1: 5px; --abstand-2: 10px; --abstand-3: 15px; --abstand-4: 30px;
+  --abstand-5: 50px; --abstand-6: 75px; --abstand-7: 100px;
+
+  --radius-typ: 3px; --radius-feld: 8px; --radius-karte: 15px; --radius-pille: 100px; --radius-kreis: 50%;
+
+  --schatten-karte: 2px 2px 6px 0 rgba(0,0,0,0.28);
+  --schatten-bild: 0 2px 4px 0 rgba(0,0,0,0.5);
+  --fokus-ring: 0 0 0 2px #ffffff, 0 0 0 4px #0e1623;
+
+  --karte-breite: 315px; --karte-hoehe: 440px; --karte-rand: 12px; --karte-leiste: 30px;
+  --karte-innen: 8px; --karte-luecke: 4px; --karte-bild: 155px; --karte-beschnitt: 15px;
+}
+
+/* Website-Textstile */
+.text-sektion { font-family: var(--font-display); font-size: 48px; line-height: 56px; font-weight: 400; }
+.text-titel { font-family: var(--font-display); font-size: 36px; line-height: 48px; font-weight: 700; letter-spacing: -1px; }
+.text-untertitel { font-family: var(--font-display); font-size: 20px; line-height: 23px; font-weight: 400; }
+.text-nav { font-family: var(--font-display); font-size: 16px; line-height: 18px; font-weight: 400; letter-spacing: 0.02px; }
+.text-button { font-family: var(--font-display); font-size: 16px; line-height: 30px; font-weight: 300; letter-spacing: 1px; }
+.text-fliess { font-family: var(--font-text); font-size: 16px; line-height: 28px; font-weight: 400; }
+.text-klein { font-family: var(--font-text); font-size: 14px; line-height: 21px; font-weight: 400; letter-spacing: 0.58px; }
+.text-zahl { font-family: var(--font-display); font-size: 26px; line-height: 30px; font-weight: 400; }
+.text-fuss { font-family: var(--font-display); font-size: 16px; line-height: 24px; font-weight: 300; }
+.text-label { font-family: var(--font-text); font-size: 12px; line-height: 21px; font-weight: 900; letter-spacing: 2.57px; }
+
+/* Karten-Textstile */
+.karte-name { font-family: var(--font-display); font-size: 19px; line-height: 22px; font-weight: 700; letter-spacing: -0.3px; }
+.karte-kp { font-family: var(--font-display); font-size: 22px; line-height: 22px; font-weight: 700; letter-spacing: -0.5px; }
+.karte-angriff { font-family: var(--font-display); font-size: 15px; line-height: 18px; font-weight: 700; letter-spacing: -0.2px; }
+.karte-schaden { font-family: var(--font-display); font-size: 18px; line-height: 18px; font-weight: 700; }
+.karte-wert { font-family: var(--font-display); font-size: 11px; line-height: 14px; font-weight: 700; }
+.karte-effekt { font-family: var(--font-text); font-size: 10.5px; line-height: 13px; font-weight: 400; }
+.karte-info { font-family: var(--font-text); font-size: 8px; line-height: 10px; font-weight: 700; letter-spacing: 0.2px; }
+.karte-label { font-family: var(--font-text); font-size: 7px; line-height: 9px; font-weight: 900; letter-spacing: 0.9px; }
+.karte-flavor { font-family: var(--font-text); font-size: 8.5px; line-height: 11px; font-weight: 400; }
+.karte-legal { font-family: var(--font-text); font-size: 6.5px; line-height: 8px; font-weight: 400; letter-spacing: 0.1px; }

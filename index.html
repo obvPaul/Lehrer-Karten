@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTL Sammelkarten – Sammle deine Lehrer</title>
+<meta name="description" content="Die Lehrpersonen der HTL Dornbirn als Sammelkarten. Ein Maturaprojekt der 5aWI – Serie 1 mit 60 Karten.">
+<meta name="theme-color" content="#0e1623">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/montserrat-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/lato-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/bundle.css">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<nav class="hw-nav" aria-label="Hauptnavigation">
+<a class="hw-nav__marke" href="#start"><span class="htl-logo" role="img" aria-label="HTL Dornbirn"></span><span><span class="hw-nav__name text-untertitel">Sammelkarten</span><span class="hw-nav__zusatz text-klein">Maturaprojekt der 5aWI</span></span></a>
+<ul class="hw-nav__links">
+<li><a class="hw-nav__link text-nav" href="#start" aria-current="page">Start</a></li>
+<li><a class="hw-nav__link text-nav" href="#kartenliste">Kartenliste</a></li>
+<li><a class="hw-nav__link text-nav" href="#typen">Typen</a></li>
+<li><a class="hw-nav__link text-nav" href="#termine">Termine</a></li>
+</ul>
+<button class="menu-knopf" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu-liste"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14"></path></svg></button>
+<ul class="menu-liste text-nav" id="menu-liste">
+<li><a href="#start">Start</a></li>
+<li><a href="#kartenliste">Kartenliste</a></li>
+<li><a href="#typen">Typen</a></li>
+<li><a href="#termine">Termine</a></li>
+</ul>
+</nav>
+
+<main>
+<header id="start" class="hw-hero">
+<div>
+<p class="hw-label text-label">Serie 1 · 60 Karten</p>
+<h1 class="hw-hero__titel text-titel">Sammle deine Lehrer</h1>
+<p class="hw-hero__zeile text-untertitel">Die Lehrpersonen der HTL Dornbirn<br>als Sammelkarten</p>
+<p class="hw-hero__text text-fliess">Die 5aWI hat als Klasse dieses einzigartige Projekt ins Leben gerufen. Gemeinsam mit der Druckerei onlinedekor® haben wir hochwertige Sammelkarten unserer Lieblingslehrer produziert – jetzt kannst du deine liebsten Karten finden und sammeln.</p>
+</div>
+<div class="hw-faecher" aria-hidden="true">
+<article class="sk-karte sk-karte--m" data-typ="pflanze">
+  <div class="sk-karte__feld">
+    <header class="sk-kopf">
+      <div class="sk-kopf__titel"><span class="sk-kopf__stufe karte-label">Basis</span><h3 class="sk-kopf__name karte-name">Prof. Musterfrau</h3></div>
+      <span class="sk-kopf__kp"><span class="karte-label">KP</span><span class="karte-kp">70</span></span>
+      <span class="sk-typ" data-typ="pflanze"></span>
+    </header>
+    <div class="sk-bild sk-bild--platzhalter"></div>
+    <p class="sk-info karte-info">Nr. 003 · Chemie · Labor C1 · seit 2016</p>
+    <div class="sk-angriffe">
+      <div class="sk-angriff">
+        <div class="sk-angriff__zeile"><span class="sk-angriff__kosten"><span class="sk-typ" data-typ="pflanze"></span></span><h4 class="sk-angriff__name karte-angriff">Titration</h4><span class="sk-angriff__schaden karte-schaden">10</span></div>
+        <p class="sk-angriff__text karte-effekt">Durchsuche dein Deck nach bis zu 2 Basis-Lehrpersonen und lege sie auf deine Bank. Mische anschließend dein Deck.</p>
+      </div>
+      <div class="sk-angriff">
+        <div class="sk-angriff__zeile"><span class="sk-angriff__kosten"><span class="sk-typ" data-typ="pflanze"></span><span class="sk-typ" data-typ="farblos"></span></span><h4 class="sk-angriff__name karte-angriff">Reagenzglas</h4><span class="sk-angriff__schaden karte-schaden">30</span></div>
+      </div>
+    </div>
+    <div class="sk-werte">
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Schwäche</span><span class="sk-typ sk-typ--klein" data-typ="feuer"></span><span class="karte-wert">×2</span></div>
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Resistenz</span></div>
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Rückzug</span><span class="sk-typ sk-typ--klein" data-typ="farblos"></span></div>
+    </div>
+    <p class="sk-flavor karte-flavor">Im Labor nie ohne Schutzbrille anzutreffen. Riecht Schwefel schon am Gang.</p>
+  </div>
+  <footer class="sk-karte__leiste">
+    <span class="sk-leiste__nr"><span class="sk-leiste__set karte-label">S1</span><span class="karte-wert">003/060</span><span class="sk-selten"><i></i><i></i></span></span>
+    <p class="sk-leiste__recht karte-legal">Foto: Klasse 5aHWII<br>© 2026 Maturaprojekt · HTL Dornbirn</p>
+  </footer>
+</article>
+<article class="sk-karte sk-karte--teaser sk-karte--m">
+  <div class="sk-karte__feld">
+    <header class="sk-kopf">
+      <div class="sk-kopf__titel"><span class="sk-kopf__stufe karte-label">Geheim</span><h3 class="sk-kopf__name karte-name">???</h3></div>
+      <span class="sk-kopf__kp"><span class="karte-label">KP</span><span class="karte-kp">??</span></span>
+      <span class="sk-typ sk-typ--unbekannt"></span>
+    </header>
+    <p class="sk-teaser__frage">?</p>
+    <p class="sk-teaser__band karte-label">Bald enthüllt</p>
+  </div>
+  <footer class="sk-karte__leiste">
+    <span class="sk-leiste__nr"><span class="sk-leiste__set karte-label">S1</span><span class="karte-wert">059/060</span><span class="sk-selten sk-selten--spezial"><i></i></span></span>
+    <p class="sk-leiste__recht karte-legal">© 2026 Maturaprojekt · HTL Dornbirn</p>
+  </footer>
+</article>
+<article class="sk-karte sk-karte--m" data-typ="psycho">
+  <div class="sk-karte__feld">
+    <header class="sk-kopf">
+      <div class="sk-kopf__titel"><span class="sk-kopf__stufe karte-label">Basis</span><h3 class="sk-kopf__name karte-name">Prof. Mustermann</h3></div>
+      <span class="sk-kopf__kp"><span class="karte-label">KP</span><span class="karte-kp">90</span></span>
+      <span class="sk-typ" data-typ="psycho"></span>
+    </header>
+    <div class="sk-bild sk-bild--platzhalter"></div>
+    <p class="sk-info karte-info">Nr. 012 · Mathematik · Raum 2.14 · seit 2011</p>
+    <div class="sk-angriffe">
+      <div class="sk-angriff">
+        <div class="sk-angriff__zeile"><span class="sk-angriff__kosten"><span class="sk-typ" data-typ="farblos"></span></span><h4 class="sk-angriff__name karte-angriff">Stundenwiederholung</h4><span class="sk-angriff__schaden karte-schaden">20</span></div>
+        <p class="sk-angriff__text karte-effekt">Wirf 1 Münze. Bei Kopf ist die gegnerische aktive Lehrperson jetzt verwirrt.</p>
+      </div>
+      <div class="sk-angriff">
+        <div class="sk-angriff__zeile"><span class="sk-angriff__kosten"><span class="sk-typ" data-typ="psycho"></span><span class="sk-typ" data-typ="psycho"></span><span class="sk-typ" data-typ="farblos"></span></span><h4 class="sk-angriff__name karte-angriff">Überraschungstest</h4><span class="sk-angriff__schaden karte-schaden">70</span></div>
+      </div>
+    </div>
+    <div class="sk-werte">
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Schwäche</span><span class="sk-typ sk-typ--klein" data-typ="finsternis"></span><span class="karte-wert">×2</span></div>
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Resistenz</span><span class="sk-typ sk-typ--klein" data-typ="kampf"></span><span class="karte-wert">-30</span></div>
+      <div class="sk-werte__zelle"><span class="sk-werte__label karte-label">Rückzug</span><span class="sk-typ sk-typ--klein" data-typ="farblos"></span><span class="sk-typ sk-typ--klein" data-typ="farblos"></span></div>
+    </div>
+    <p class="sk-flavor karte-flavor">Erkennt Abschreiben auf zwanzig Meter Entfernung. Rechnet im Kopf schneller, als der Taschenrechner hochfährt.</p>
+  </div>
+  <footer class="sk-karte__leiste">
+    <span class="sk-leiste__nr"><span class="sk-leiste__set karte-label">S1</span><span class="karte-wert">012/060</span><span class="sk-selten"><i></i></span></span>
+    <p class="sk-leiste__recht karte-legal">Foto: Klasse 5aHWII<br>© 2026 Maturaprojekt · HTL Dornbirn</p>
+  </footer>
+</article>
+</div>
+</header>
+
+<section id="kartenliste" class="hw-abschnitt">
+<div class="hw-inhalt">
+<h2 class="hw-titel text-sektion">Kartenliste</h2>
+<p class="hw-titel__zeile text-untertitel">60 Karten gibt es zu sammeln.</p>
+<div class="hw-filter" role="group" aria-label="Kartenliste filtern" id="filter"></div>
+<div class="hw-raster" id="raster" aria-live="polite"></div>
+<div class="mehr"><a class="hw-button hw-button--kompakt text-button" href="#termine">Packung holen</a></div>
+
+<div class="sammler">
+<p class="hw-label text-label">Sammlerstücke · 051 bis 060</p>
+<h3 class="text-titel">Und es gibt noch Unbekanntes zu entdecken</h3>
+<p class="text-fliess sammler__text">Findest du die geheimen Full Arts?</p>
+<div class="stapel-buehne" id="stapel">
+<button class="stapel-knopf" type="button" aria-label="Stapel aufdecken" aria-expanded="false"></button>
+<div class="stapel-hinweis">
+<p class="text-untertitel" style="margin: 0; color: var(--flaeche-nacht); max-width: 521px">Wir haben mehr zu bieten als nur Standardkarten</p>
+<p class="text-klein" style="margin: 10px 0 0; color: var(--tinte-gedaempft)">Aber wir wollen dir natürlich nicht den ganzen Spaß verderben, indem wir jetzt schon alles zeigen. Tipp auf den Stapel.</p>
+</div>
+</div>
+<div class="stapel-fuss" id="stapel-fuss" hidden>
+<p class="text-klein">Oben: 051 bis 055, Selten Holo · Ganz unten: 056 bis 060, Full Art und Spezial, noch verdeckt</p>
+<button class="hw-button hw-button--kompakt text-button" type="button" id="stapel-zu">Wieder stapeln</button>
+</div>
+</div>
+</div>
+</section>
+
+<section id="typen" class="hw-abschnitt hw-abschnitt--weiss">
+<div class="hw-inhalt">
+<h2 class="hw-titel text-sektion">Ganze elf Typen</h2>
+<div class="typ-raster" id="typen-raster"></div>
+</div>
+</section>
+
+<section id="termine" class="hw-abschnitt">
+<div class="hw-inhalt">
+<p class="hw-label text-label">Verkauf in der Schule</p>
+<h2 class="hw-titel text-sektion">Termine</h2>
+<p class="hw-titel__zeile text-untertitel">Komm einfach in der Pause in die Aula und hol dir deine Packungen.</p>
+<div class="termine">
+<aside class="hw-box">
+<a class="hw-box__link text-klein" href="#termine"><strong class="hw-box__titel text-untertitel">Vorbestellung</strong>Packung reservieren und in der Schule abholen · [PREIS] je Packung</a>
+<a class="hw-box__link text-klein" href="#kartenliste"><strong class="hw-box__titel text-untertitel">Kartenliste</strong>Alle 60 Karten der Serie 1</a>
+<a class="hw-box__link text-klein" href="#typen"><strong class="hw-box__titel text-untertitel">Spielregeln</strong>So tritt dein Kollegium an</a>
+</aside>
+<div class="termine__liste">
+<div class="hw-termin"><div class="hw-termin__datum text-klein"><span class="hw-termin__tag text-zahl">Mo.</span>16.11.</div><div class="hw-termin__inhalt"><p class="hw-termin__titel text-untertitel">Verkaufsstart Serie 1</p><p class="hw-termin__zeit text-klein">große Pause, Aula</p></div></div>
+<div class="hw-termin"><div class="hw-termin__datum text-klein"><span class="hw-termin__tag text-zahl">Do.</span>03.12.</div><div class="hw-termin__inhalt"><p class="hw-termin__titel text-untertitel">Tauschbörse</p><p class="hw-termin__zeit text-klein">13:00 bis 14:00 Uhr, Bibliothek</p></div></div>
+<div class="hw-termin"><div class="hw-termin__datum text-klein"><span class="hw-termin__tag text-zahl">Sa.</span>05.12.</div><div class="hw-termin__inhalt"><p class="hw-termin__titel text-untertitel">Tag der offenen Tür</p><p class="hw-termin__zeit text-klein">09:00 bis 16:00 Uhr, Stand im Foyer</p></div></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="hw-fuss text-fuss">
+<div class="hw-fuss__marke"><span class="htl-logo" role="img" aria-label="HTL Dornbirn"></span><span>HTL Sammelkarten<br><span class="text-klein">Ein Maturaprojekt der HTL Dornbirn</span></span></div>
+<ul class="hw-fuss__spalte"><li class="hw-fuss__titel">Projekt</li><li><a href="#kartenliste">Kartenliste</a></li><li><a href="#typen">Typen</a></li><li><a href="#termine">Termine</a></li></ul>
+<ul class="hw-fuss__spalte"><li class="hw-fuss__titel">Kontakt</li><li><a href="#start">Maturaklasse 5aWI</a></li><li><a href="#start">Impressum</a></li><li><a href="#start">Datenschutz</a></li></ul>
+<p class="hw-fuss__recht text-klein">Höchsterstraße 73 · 6851 Dornbirn · Mit Zustimmung der Schulleitung</p>
+</footer>
+
+</body>
+</html>
